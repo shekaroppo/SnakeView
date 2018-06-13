@@ -1,0 +1,45 @@
+ext {
+
+  compileSdkVersion = 27
+  buildToolsVersion = "27.0.3"
+  minSdkVersion = 19
+  targetSdkVersion = 27
+
+  def versionSupportLib = '27.1.1'
+
+  def versionDagger = '2.11'
+
+  def retrofitVersion ='2.2.0'
+
+  def okhttpVersion = '3.6.0'
+
+  def rxAndroidVersion='1.2.1'
+
+  def glideVersion='3.8.0'
+
+  def androidLibs = [appCompat         : [group: 'com.android.support', name: 'appcompat-v7', version: versionSupportLib],
+                     supportannotations: [group: 'com.android.support', name: 'support-annotations', version: versionSupportLib],
+                     recyclerviewv7    : [group: 'com.android.support', name: 'recyclerview-v7', version: versionSupportLib]]
+
+  def libs = [dagger             :[group: 'com.google.dagger', name: 'dagger', version: versionDagger],
+              daggerCompiler     :[group: 'com.google.dagger', name: 'dagger-compiler', version: versionDagger],
+              retrofit           :[group:'com.squareup.retrofit2',name:'retrofit',version: retrofitVersion],
+              converterGson      :[group:'com.squareup.retrofit2',name:'converter-gson',version: retrofitVersion],
+              adapterRxJava      :[group:'com.squareup.retrofit2',name:'adapter-rxjava',version: retrofitVersion],
+              loggingInterceptor :[group:'com.squareup.okhttp3',name:'logging-interceptor',version: okhttpVersion],
+              rxAndroid          :[group:'io.reactivex',name:'rxandroid',version: rxAndroidVersion],
+              glide          :[group:'com.github.bumptech.glide',name:'glide',version: glideVersion]]
+
+  appDependencies = [[configuration: "implementation", dependency: androidLibs.appCompat],
+                     [configuration: "implementation", dependency: androidLibs.supportannotations],
+                     [configuration: "implementation", dependency: androidLibs.recyclerviewv7],
+                     [configuration: "implementation", dependency: libs.dagger],
+                     [configuration: "annotationProcessor", dependency: libs.daggerCompiler],
+                     [configuration: "implementation", dependency: libs.retrofit],
+                     [configuration: "implementation", dependency: libs.converterGson],
+                     [configuration: "implementation", dependency: libs.adapterRxJava],
+                     [configuration: "implementation", dependency: libs.loggingInterceptor],
+                     [configuration: "implementation", dependency: libs.rxAndroid],
+                     [configuration: "implementation", dependency: libs.glide]]
+}
+

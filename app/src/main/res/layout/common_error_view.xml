@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/errorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="16dp"
+        android:drawableTop="@android:drawable/arrow_up_float"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/error_retry_msg"
+        android:textColor="#656565"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</layout>

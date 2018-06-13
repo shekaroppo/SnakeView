@@ -1,0 +1,22 @@
+<resources>
+  <string name="app_name">SnakeView</string>
+  <string name="consumer_key" translatable="false">bSTZU8eu9DV40eK78Qxw6Le62</string>
+  <string name="consumer_secret" translatable="false">4J5ToigvuhzFyXys1iaLk7AXdpqtf4pQp5IfANO9JOHLnYIoRg</string>
+  <string name="error_retry_msg">An error has occurred! click here to retry</string>
+  <array name="dummy_items">
+    <item>One</item>
+    <item>Two</item>
+    <item>Three</item>
+    <item>Four</item>
+    <item>Five</item>
+    <item>Six</item>
+    <item>Seven</item>
+    <item>Eight</item>
+    <item>Nine</item>
+    <item>Ten</item>
+  </array>
+  <array name="main_items">
+    <item>List - Basic Drag and Swipe</item>
+    <item>Grid - Basic Swipe</item>
+  </array>
+</resources>
